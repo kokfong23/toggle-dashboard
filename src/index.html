@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Toggle-Dashboard</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.2/css/bootstrap3/bootstrap-switch.min.css">
+  <link rel="stylesheet" href="css/bundle.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.38/browser.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-switch/3.3.2/js/bootstrap-switch.min.js"></script>
+</head>
+
+<body>
+  <div id="content"></div>
+  <div id="spinner" class="spinner" style="display:none;">
+    <img id="img-spinner" src="images/spinner.gif" alt="Loading"/>
+  </div>
+  <script type="text/babel" src="scripts/bundle.js"></script>
+  <script>
+      $.ajaxSetup({
+        beforeSend:function(){
+            $("#spinner").show();
+        },
+        complete:function(){
+            $("#spinner").hide();
+        }
+    });
+  </script>
+</body>
+
+</html>

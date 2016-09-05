@@ -1,0 +1,286 @@
+<?xml version="1.0"?>
+<ServiceConfiguration serviceName="Nintex.Forms.Azure" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="3" osVersion="*" schemaVersion="2014-01.2.3">
+  <Role name="Nintex.Forms.SharePoint">
+    <Instances count="2" />
+    <ConfigurationSettings>
+      <Setting name="AppAuthDomain" value="tstfol04csvwus01.nintextest.com"/>
+      <Setting name="ClientId" value="cf8719e5-856b-406f-8f91-00011975ba88"/>
+      <Setting name="ClientSecret" value="Y/UAPp/pr8mM+g9JoKcIYQgdzJozirIjXWDsrLuzW7c="/>
+      <Setting name="SecondaryClientSecret" value="" />
+      <Setting name="HostedAppHostNameOverride" value="tstfol04csvwus01.nintextest.com;tstfol01csvjae01.nintextest.com" />
+
+      <Setting name="DEVTokenUrl" value="https://devtokens.nintex.com/api/tokens" />
+      <Setting name="ECommerceURL" value="https://ecom4.nintextest.com/LIC/V1/" />
+      <Setting name="HelpUrl" value="http://help.nintextest.com/{culture}/O365/Default.htm#cshid=" />
+      <Setting name="MarketplaceUrl" value="https://store4.nintextest.com/" />
+      <Setting name="RegisterCustomerURL" value="https://ecom4.nintextest.com/oobe/v1" />
+      <Setting name="SubscriptionOverviewUrl" value="https://store4.nintextest.com/subscriptionoverview" />
+      <Setting name="SubscriptionConsumptionUrl" value="https://store4.nintextest.com/subscriptionconsumption" />
+      <Setting name="WebPartHelpLink" value="https://tstfol04csvwus01.nintextest.com/webparthelp.html" />
+      <Setting name="HelpSupportedLanguage" value="en-US;ja-JP;de-DE;pt-BR;fr-FR;es-ES;zh-CHT" />
+
+      <Setting name="urn.nintex.dev_Thumbprint" value="031DC0309891803633F608D30DAD9DB9B50BE51E" />
+      <Setting name="urn.nintex.spolf_Thumbprint" value="6530A4BF798B028290B116BE2C49C5BD905906FA" />
+
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=tstfol04strwus02;AccountKey=tvF2dZT9MjWFRuoCybwnXDhNS5wI20iv/VorhsHssuTchO9P7jg5skmrMVnuG9Y3RQbxy2cSDofHvns5CoADsg==" />
+      <Setting name="NintexFormSQLConnection" value="Data Source=tstfol04sqlserverwus.database.windows.net;Initial Catalog=tstfol04sqlwus01;User ID=tstfolsqladmin;Password=Windows.2000;Encrypt=true;Trusted_Connection=false;" />
+      <Setting name="StorageAccount" value="DefaultEndpointsProtocol=https;AccountName=tstfol04strwus01;AccountKey=rXpJWBM+VBYCqRTvPIVooR0n+UtWz5wSL9OYbnAQexXSRRB0CGY6EDyySsFeswILAEtPd6OOqcW6ZWeeXT46tw==" />
+      <Setting name="TelemetryStorageAccount" value="DefaultEndpointsProtocol=https;AccountName=tstwfo03strwus03;AccountKey=c7P+UvdzkEh4fsZJQAbIjtuiNLbR3P45qkyRI2iT4/BPbifnUHG6Xx/izHyMSTc7GI1FYjD5oZRTdUc8Imz7yQ==" />
+      <Setting name="TelemetryBlob" value="telemetrydrop" />
+      <Setting name="TelemetryQueue" value="telemetryqueue" />
+
+      <Setting name="LoggerAssembly" value="Nintex.Forms.SharePoint, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c52d764dcf7ec883" />
+      <Setting name="LoggerType" value="Nintex.Forms.SharePoint.SemanticLogger" />
+      <Setting name="LoggingLevel" value="Error" />
+
+      <Setting name="GoogleAnalyticsAccount" value="UA-55537829-2" />
+      <Setting name="NintexFormsAppProductId" value="77b66800-43f5-451d-bd03-04bfe9c7df4e" />
+      <Setting name="EnterpriseSkuCodes" value="NF365S-B1-YR1,NF365S-B8-YR1"/>
+      <Setting name="SkuCode" value="NF365S-B1-YR1" />
+
+      <Setting name="DevOption_ConnectToProd_EC" value="false" />
+      <Setting name="DevOption_ConnectToProd_Store" value="false" />
+
+      <Setting name="ETag" value="2.10.0.208" />
+      <Setting name="MaximumFileSize" value="250" />
+      <Setting name="MinimumAppVersionSupportingRegionalInstances" value="1.2.3.0" />
+
+      <Setting name="NintexBillingUri" value="urn:nintex:ec" />
+      <Setting name="NintexMarketplaceUri" value="urn:nintex:mkpl" />
+      <Setting name="NintexFormAudienceUri" value="urn:nintex:spolf" />
+
+      <Setting name="NintexMobilelayoutsVisibleToAll" value="true" />
+      <Setting name="NintexMobilelayoutsVisibleToSites" value="https://nintexinteraction01.sharepoint.com/sites/MobileDev;https://seasafe.sharepoint.com" />
+
+      <Setting name="AllowCaching" value="true" />
+      <Setting name="CacheMode" value="Azure" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Caching.ClientDiagnosticLevel" value="1" />
+
+      <Setting name="ControlAlignmentToggle" value="true"/>
+      <Setting name="DevelopmentToggle" value="true" />
+      <Setting name="EnableDevCacheModificationPage" value="1"/>
+      <Setting name="IsServiceAuthenticationEnabled" value="false" />
+      <Setting name="ToggleDataSovMigrationEnabled" value="true" />
+      <Setting name="ToggleTenantWhitelist" value=""/>
+
+      <!-- Service Discovery -->
+      <Setting name="ServiceDiscoveryEndPoint" value="https://provisioningservice-test01-wus.azurewebsites.net" />
+      <Setting name="ServiceDiscoveryPSK" value="e0ZDNEZDODJGLTQ1RTItNDQ4Mi04ODMyLTFEMkRGMUYxQjlDOH0=" />
+
+      <Setting name="RegionalInstanceConfig0ID" value="WUS" />
+      <Setting name="RegionalInstanceConfig0ServiceUrl" value="tstfol04csvwus01.nintextest.com" />
+      <Setting name="RegionalInstanceConfig0NintexFormsSqlConnection" value="Data Source=tstfol04sqlserverwus.database.windows.net;Initial Catalog=tstfol04sqlwus01;User ID=tstfolsqladmin;Password=Windows.2000;Encrypt=true;Trusted_Connection=false;" />
+      <Setting name="RegionalInstanceConfig0RedisCacheConnection" value="tstfol04rdcwus01.redis.cache.windows.net,syncTimeout=100000,ssl=true,password=0OwXEQM+5R1TKU4wkTzDwL7L52KMsolejRJim9yDKVA=" />
+      
+      <Setting name="RegionalInstanceConfig1ID" value="JAE" />
+      <Setting name="RegionalInstanceConfig1ServiceUrl" value="tstfol01csvjae01.nintextest.com" />
+      <Setting name="RegionalInstanceConfig1NintexFormsSqlConnection" value="Server=tcp:tstfol01sqlserverjae.database.windows.net,1433;Database=tstfol01sqljae01;UserID=tstfolsqladmin@tstfol01sqlserverjae;Password=Windows.2000;Encrypt=True;TrustServerCertificate=False;ConnectionTimeout=30;" />
+      <Setting name="RegionalInstanceConfig1RedisCacheConnection" value="tstfol01rdcjae01.redis.cache.windows.net,syncTimeout=100000,ssl=true,password=HebNcBUoVAVaBFGqlPNUsRNfuiYelmLi4h4m7hLV/QA=" />
+
+      <Setting name="RegionalInstanceConfig2ID" value="" />
+      <Setting name="RegionalInstanceConfig2ServiceUrl" value="" />
+      <Setting name="RegionalInstanceConfig2NintexFormsSqlConnection" value="" />
+      <Setting name="RegionalInstanceConfig2RedisCacheConnection" value="" />
+
+      <Setting name="RegionalInstanceConfig3ID" value="" />
+      <Setting name="RegionalInstanceConfig3ServiceUrl" value="" />
+      <Setting name="RegionalInstanceConfig3NintexFormsSqlConnection" value="" />
+      <Setting name="RegionalInstanceConfig3RedisCacheConnection" value="" />
+
+      <Setting name="RegionalInstanceConfig4ID" value="" />
+      <Setting name="RegionalInstanceConfig4ServiceUrl" value="" />
+      <Setting name="RegionalInstanceConfig4NintexFormsSqlConnection" value="" />
+      <Setting name="RegionalInstanceConfig4RedisCacheConnection" value="" />
+
+      <Setting name="RegionalInstanceConfig5ID" value="" />
+      <Setting name="RegionalInstanceConfig5ServiceUrl" value="" />
+      <Setting name="RegionalInstanceConfig5NintexFormsSqlConnection" value="" />
+      <Setting name="RegionalInstanceConfig5RedisCacheConnection" value="" />
+
+      <Setting name="RegionalInstanceConfig6ID" value="" />
+      <Setting name="RegionalInstanceConfig6ServiceUrl" value="" />
+      <Setting name="RegionalInstanceConfig6NintexFormsSqlConnection" value="" />
+      <Setting name="RegionalInstanceConfig6RedisCacheConnection" value="" />
+
+      <Setting name="RegionalInstanceConfig7ID" value="" />
+      <Setting name="RegionalInstanceConfig7ServiceUrl" value="" />
+      <Setting name="RegionalInstanceConfig7NintexFormsSqlConnection" value="" />
+      <Setting name="RegionalInstanceConfig7RedisCacheConnection" value="" />
+
+      <Setting name="RegionalInstanceConfig8ID" value="" />
+      <Setting name="RegionalInstanceConfig8ServiceUrl" value="" />
+      <Setting name="RegionalInstanceConfig8NintexFormsSqlConnection" value="" />
+      <Setting name="RegionalInstanceConfig8RedisCacheConnection" value="" />
+
+      <Setting name="RegionalInstanceConfig9ID" value="" />
+      <Setting name="RegionalInstanceConfig9ServiceUrl" value="" />
+      <Setting name="RegionalInstanceConfig9NintexFormsSqlConnection" value="" />
+      <Setting name="RegionalInstanceConfig9RedisCacheConnection" value="" />
+
+      <Setting name="RegisteredSPAppUrl" value="https://tstfol04csvwus01.nintextest.com" />
+      <Setting name="RegionInstanceUrl" value="https://tstfol04csvwus01.nintextest.com" />
+
+      <!-- Redis cache -->
+      <Setting name="RedisCacheConnectionString" value="tstfol04rdcwus01.redis.cache.windows.net,syncTimeout=100000,ssl=true,password=0OwXEQM+5R1TKU4wkTzDwL7L52KMsolejRJim9yDKVA=" />
+      <Setting name="GlimpseRedisConnectionString" value="tstfol04rdcwus01.redis.cache.windows.net,ssl=true,syncTimeout=100000,password=0OwXEQM+5R1TKU4wkTzDwL7L52KMsolejRJim9yDKVA=" />
+
+      <Setting name="DemoTenantIds" value="875be72c-0b15-4ec8-acab-a4839ce55862" />
+      <Setting name="DemoTenantMobileSessionTimeoutMinutes" value="5" />
+
+      <!-- Consumption Service -->
+      <Setting name="SubscriptionToggle" value="true" />
+      <Setting name="ConsumptionToggle" value="true"/>
+      <Setting name="ConsumptionUrl" value="https://tstcmp04webwus01.azurewebsites.net" />
+      <Setting name="Consumption.Jwt.Psk" value="d78d8644f44c428b956175b36bc36466" />
+      <Setting name="Consumption.Jwt.Audience" value="urn:nintex:cmp:api:test4" />
+      <Setting name="Consumption.Jwt.CmpServiceClaimType" value="nsr" />
+      <Setting name="Consumption.Jwt.CmpServiceClaimValue" value="nwf-cmp" />
+
+      <Setting name="PdfPrintingToggle" value="true"/>
+      <Setting name="PdfGeneratorUrl" value="https://tstfol01csvwus02.nintextest.com" />
+      <Setting name="PdfPrintingAudienceUri" value="urn:nintex:spolfprint"/>
+      
+      <Setting name="LookupFunctionToggle" value="true"/>
+
+      <Setting name="AzureCDNHostName" value=""/>
+      <Setting name="SharePointCDNUrl" value="https://static.sharepointonline.com/bld/_layouts/15/16.0.5326.1207/" />
+
+      <Setting name="ProfilerOptions.MinLevel" value="Off"/>    
+      <Setting name="ProfilerOptions.MinDuration" value="10000"/>
+      
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="SSL" thumbprint="80E7285591DA057EB7A387497ADB4886F00DD6EE" thumbprintAlgorithm="sha1" />
+      <Certificate name="DEV" thumbprint="031DC0309891803633F608D30DAD9DB9B50BE51E" thumbprintAlgorithm="sha1" />
+      <Certificate name="urn.nintex.spolf" thumbprint="6530A4BF798B028290B116BE2C49C5BD905906FA" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+  <Role name="NFO365.CacheWorker">
+    <Instances count="2" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=tstfol04strwus02;AccountKey=tvF2dZT9MjWFRuoCybwnXDhNS5wI20iv/VorhsHssuTchO9P7jg5skmrMVnuG9Y3RQbxy2cSDofHvns5CoADsg==" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Caching.ClientDiagnosticLevel" value="1" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Caching.CacheSizePercentage" value="" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Caching.ConfigStoreConnectionString" value="DefaultEndpointsProtocol=https;AccountName=tstfol04strwus02;AccountKey=tvF2dZT9MjWFRuoCybwnXDhNS5wI20iv/VorhsHssuTchO9P7jg5skmrMVnuG9Y3RQbxy2cSDofHvns5CoADsg==" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Caching.DiagnosticLevel" value="1" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Caching.NamedCaches" value="{&quot;caches&quot;:[{&quot;name&quot;:&quot;default&quot;,&quot;policy&quot;:{&quot;eviction&quot;:{&quot;type&quot;:0},&quot;expiration&quot;:{&quot;defaultTTL&quot;:43200,&quot;isExpirable&quot;:true,&quot;type&quot;:1},&quot;serverNotification&quot;:{&quot;isEnabled&quot;:false}},&quot;secondaries&quot;:0},{&quot;name&quot;:&quot;Nfo365LicenseDataCache&quot;,&quot;policy&quot;:{&quot;eviction&quot;:{&quot;type&quot;:0},&quot;expiration&quot;:{&quot;defaultTTL&quot;:1440,&quot;isExpirable&quot;:true,&quot;type&quot;:1},&quot;serverNotification&quot;:{&quot;isEnabled&quot;:false}},&quot;secondaries&quot;:0},{&quot;name&quot;:&quot;NMADataCache&quot;,&quot;policy&quot;:{&quot;eviction&quot;:{&quot;type&quot;:0},&quot;expiration&quot;:{&quot;defaultTTL&quot;:0,&quot;isExpirable&quot;:false,&quot;type&quot;:0},&quot;serverNotification&quot;:{&quot;isEnabled&quot;:false}},&quot;secondaries&quot;:0}]}" />
+    </ConfigurationSettings>
+  </Role>
+  <Role name="Nintex.Forms.Api">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="DEVTokenUrl" value="https://devtokens.nintex.com/api/tokens" />
+      <Setting name="ECommerceURL" value="https://ecom4.nintextest.com/LIC/V1/" />
+
+      <Setting name="urn.nintex.dev_Thumbprint" value="031DC0309891803633F608D30DAD9DB9B50BE51E" />
+      <Setting name="urn.nintex.spolf_Thumbprint" value="6530A4BF798B028290B116BE2C49C5BD905906FA" />
+
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=tstfol04strwus02;AccountKey=tvF2dZT9MjWFRuoCybwnXDhNS5wI20iv/VorhsHssuTchO9P7jg5skmrMVnuG9Y3RQbxy2cSDofHvns5CoADsg==" />
+      <Setting name="NintexFormSQLConnection" value="Data Source=tstfol04sqlserverwus.database.windows.net;Initial Catalog=tstfol04sqlwus01;User ID=tstfolsqladmin;Password=Windows.2000;Encrypt=true;Trusted_Connection=false;" />
+      <Setting name="StorageAccount" value="DefaultEndpointsProtocol=https;AccountName=tstfol04strwus01;AccountKey=rXpJWBM+VBYCqRTvPIVooR0n+UtWz5wSL9OYbnAQexXSRRB0CGY6EDyySsFeswILAEtPd6OOqcW6ZWeeXT46tw==" />
+      <Setting name="TelemetryStorageAccount" value="DefaultEndpointsProtocol=https;AccountName=tstwfo03strwus03;AccountKey=c7P+UvdzkEh4fsZJQAbIjtuiNLbR3P45qkyRI2iT4/BPbifnUHG6Xx/izHyMSTc7GI1FYjD5oZRTdUc8Imz7yQ==" />
+      <Setting name="TelemetryBlob" value="telemetrydrop" />
+      <Setting name="TelemetryQueue" value="telemetryqueue" />
+
+      <Setting name="LoggingLevel" value="Error" />
+
+      <Setting name="NintexFormsAppProductId" value="77b66800-43f5-451d-bd03-04bfe9c7df4e" />
+      <Setting name="EnterpriseSkuCodes" value="NF365S-B1-YR1,NF365S-B8-YR1"/>
+
+      <Setting name="DevOption_ConnectToProd_EC" value="false" />
+      <Setting name="DevOption_ConnectToProd_Store" value="false" />
+
+      <Setting name="NintexBillingUri" value="urn:nintex:ec" />
+      <Setting name="NintexMarketplaceUri" value="urn:nintex:mkpl" />
+      <Setting name="NintexFormAudienceUri" value="urn:nintex:spolf" />
+
+      <Setting name="AllowCaching" value="true" />
+      <Setting name="CacheMode" value="Azure" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Caching.ClientDiagnosticLevel" value="1" />
+
+      <Setting name="DevelopmentToggle" value="true" />
+      <Setting name="ToggleDataSovMigrationEnabled" value="true" />
+      <Setting name="ToggleTenantWhitelist" value=""/>
+
+      <!-- Service Discovery -->
+      <Setting name="ServiceDiscoveryEndPoint" value="https://provisioningservice-test01-wus.azurewebsites.net" />
+      <Setting name="ServiceDiscoveryPSK" value="e0ZDNEZDODJGLTQ1RTItNDQ4Mi04ODMyLTFEMkRGMUYxQjlDOH0=" />
+
+      <Setting name="RegionalInstanceConfig0ID" value="WUS" />
+      <Setting name="RegionalInstanceConfig0ServiceUrl" value="tstfol04csvwus01.nintextest.com" />
+      <Setting name="RegionalInstanceConfig0NintexFormsSqlConnection" value="Data Source=tstfol04sqlserverwus.database.windows.net;Initial Catalog=tstfol04sqlwus01;User ID=tstfolsqladmin;Password=Windows.2000;Encrypt=true;Trusted_Connection=false;" />
+      <Setting name="RegionalInstanceConfig0RedisCacheConnection" value="tstfol04rdcwus01.redis.cache.windows.net,syncTimeout=100000,ssl=true,password=0OwXEQM+5R1TKU4wkTzDwL7L52KMsolejRJim9yDKVA=" />
+      
+      <Setting name="RegionalInstanceConfig1ID" value="JAE" />
+      <Setting name="RegionalInstanceConfig1ServiceUrl" value="tstfol01csvjae01.nintextest.com" />
+      <Setting name="RegionalInstanceConfig1NintexFormsSqlConnection" value="Server=tcp:tstfol01sqlserverjae.database.windows.net,1433;Database=tstfol01sqljae01;UserID=tstfolsqladmin@tstfol01sqlserverjae;Password=Windows.2000;Encrypt=True;TrustServerCertificate=False;ConnectionTimeout=30;" />
+      <Setting name="RegionalInstanceConfig1RedisCacheConnection" value="tstfol01rdcjae01.redis.cache.windows.net,syncTimeout=100000,ssl=true,password=HebNcBUoVAVaBFGqlPNUsRNfuiYelmLi4h4m7hLV/QA=" />
+
+      <Setting name="RegionalInstanceConfig2ID" value="" />
+      <Setting name="RegionalInstanceConfig2ServiceUrl" value="" />
+      <Setting name="RegionalInstanceConfig2NintexFormsSqlConnection" value="" />
+      <Setting name="RegionalInstanceConfig2RedisCacheConnection" value="" />
+
+      <Setting name="RegionalInstanceConfig3ID" value="" />
+      <Setting name="RegionalInstanceConfig3ServiceUrl" value="" />
+      <Setting name="RegionalInstanceConfig3NintexFormsSqlConnection" value="" />
+      <Setting name="RegionalInstanceConfig3RedisCacheConnection" value="" />
+
+      <Setting name="RegionalInstanceConfig4ID" value="" />
+      <Setting name="RegionalInstanceConfig4ServiceUrl" value="" />
+      <Setting name="RegionalInstanceConfig4NintexFormsSqlConnection" value="" />
+      <Setting name="RegionalInstanceConfig4RedisCacheConnection" value="" />
+
+      <Setting name="RegionalInstanceConfig5ID" value="" />
+      <Setting name="RegionalInstanceConfig5ServiceUrl" value="" />
+      <Setting name="RegionalInstanceConfig5NintexFormsSqlConnection" value="" />
+      <Setting name="RegionalInstanceConfig5RedisCacheConnection" value="" />
+
+      <Setting name="RegionalInstanceConfig6ID" value="" />
+      <Setting name="RegionalInstanceConfig6ServiceUrl" value="" />
+      <Setting name="RegionalInstanceConfig6NintexFormsSqlConnection" value="" />
+      <Setting name="RegionalInstanceConfig6RedisCacheConnection" value="" />
+
+      <Setting name="RegionalInstanceConfig7ID" value="" />
+      <Setting name="RegionalInstanceConfig7ServiceUrl" value="" />
+      <Setting name="RegionalInstanceConfig7NintexFormsSqlConnection" value="" />
+      <Setting name="RegionalInstanceConfig7RedisCacheConnection" value="" />
+
+      <Setting name="RegionalInstanceConfig8ID" value="" />
+      <Setting name="RegionalInstanceConfig8ServiceUrl" value="" />
+      <Setting name="RegionalInstanceConfig8NintexFormsSqlConnection" value="" />
+      <Setting name="RegionalInstanceConfig8RedisCacheConnection" value="" />
+
+      <Setting name="RegionalInstanceConfig9ID" value="" />
+      <Setting name="RegionalInstanceConfig9ServiceUrl" value="" />
+      <Setting name="RegionalInstanceConfig9NintexFormsSqlConnection" value="" />
+      <Setting name="RegionalInstanceConfig9RedisCacheConnection" value="" />
+
+      <Setting name="RegisteredSPAppUrl" value="https://tstfol04csvwus01.nintextest.com" />
+      <Setting name="RegionInstanceUrl" value="https://tstfol04csvwus01.nintextest.com" />
+
+      <!-- Consumption Service -->
+      <Setting name="SubscriptionToggle" value="true" />
+      <Setting name="ConsumptionToggle" value="true"/>
+      <Setting name="ConsumptionUrl" value="https://tstcmp04webwus01.azurewebsites.net" />
+      <Setting name="Consumption.Jwt.Psk" value="d78d8644f44c428b956175b36bc36466" />
+      <Setting name="Consumption.Jwt.Audience" value="urn:nintex:cmp:api:test4" />
+      <Setting name="Consumption.Jwt.CmpServiceClaimType" value="nsr" />
+      <Setting name="Consumption.Jwt.CmpServiceClaimValue" value="nwf-cmp" />
+
+      <Setting name="PdfPrintingToggle" value="true" />
+
+      <Setting name="ApiRequiresSecrets" value="false" />
+      <Setting name="ApiGatewaySecret" value="" />
+      <Setting name="ApiFacadeSecret" value="" />
+      <Setting name="ApiServicesSecret" value="" />
+      <Setting name="EnableSwaggerUi" value="true" />
+
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="SSL" thumbprint="80E7285591DA057EB7A387497ADB4886F00DD6EE" thumbprintAlgorithm="sha1" />
+      <Certificate name="DEV" thumbprint="031DC0309891803633F608D30DAD9DB9B50BE51E" thumbprintAlgorithm="sha1" />
+      <Certificate name="urn.nintex.spolf" thumbprint="6530A4BF798B028290B116BE2C49C5BD905906FA" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>
